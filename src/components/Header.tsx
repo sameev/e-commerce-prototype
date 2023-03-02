@@ -7,15 +7,15 @@ export default function Header() {
     <header>
       <Link href='/'>
         <Image
-          src='/vercel.svg'
-          alt='E-Commerce Site Logo'
+          src='/onyx-logo.avif'
+          alt='Onyx Coffee Logo'
           className={styles.vercelLogo}
-          width={100}
-          height={24}
+          width={50}
+          height={50}
         />
       </Link>
       <Link href='/'>
-        <h1>Vercel</h1>
+        <h1>Onyx Coffee</h1>
       </Link>
       <a href='#' style={{ textDecoration: 'none' }}>
         <svg
