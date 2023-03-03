@@ -1,9 +1,10 @@
 import ProductList from '@components/components/ProductList';
 import Head from 'next/head';
 import { IProduct } from '../components/Product';
-import Contact from '../components/Contact.jsx'; 
-import { products } from '../lib/products'
+import Contact from '../components/Contact.jsx';
+import { products } from '../lib/products';
 import { GetStaticProps } from 'next';
+import Script from 'next/script';
 
 interface IProductListProps {
   products: IProduct[];
@@ -11,10 +12,10 @@ interface IProductListProps {
 export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
-      products
-    }
-  }
-}
+      products,
+    },
+  };
+};
 
 export default function Home({ products }: IProductListProps) {
   return (
@@ -28,6 +29,8 @@ export default function Home({ products }: IProductListProps) {
         <ProductList products={products} />
         <Contact />
       </main>
+      <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"/>
+      <div hidden id="snipcart" data-api-key="YTM5NDIxYzUtNDQwOC00NzBlLThkY2ItZDA3NDE5ZmIyYjg5NjM4MTMzNzkxMzM2ODE1NTg4"></div>
     </>
   );
 }

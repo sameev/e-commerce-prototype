@@ -25,6 +25,7 @@ const Product = (props: IProductProps) => {
       <div>
         <div>{props.product.price}</div>
         <button
+          className='snipcart-add-item'
           data-item-id={props.product.id}
           data-item-name={props.product.name}
           data-item-price={props.product.price}
