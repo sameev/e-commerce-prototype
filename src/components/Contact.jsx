@@ -1,10 +1,22 @@
+import styles from '../styles/Contact.module.scss';
+
 export default function Contact() {
   return (
-    <div>
-      <h2>Any Questions? Contact us.</h2>
-      <p>I look forward to hearing from you regarding any questions or feedback.</p>
-      <a href="https://www.linkedin.com/in/sameev/">LinkedIn</a>
-      <a href="https://github.com/sameev">GitHub</a>
+    <div className={styles.contact}>
+      <h2 className={styles.contact__title}>
+        Any Questions? <span className={styles.colored}>Contact us.</span>
+      </h2>
+      <p className={styles.contact__paragraph}>
+        I look forward to hearing from you regarding any questions or feedback.
+      </p>
+      <div className={styles.contact__socials}>
+        <a href='https://www.linkedin.com/in/sameev/'>
+          <button>LinkedIn</button>
+        </a>
+        <a href='https://github.com/sameev'>
+          <button>GitHub</button>
+        </a>
+      </div>
     </div>
-  )
+  );
 }
