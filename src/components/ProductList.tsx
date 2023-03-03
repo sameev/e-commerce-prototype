@@ -1,5 +1,4 @@
 import Product, { IProduct } from './Product';
-
 interface IProductListProps {
   products: IProduct[];
 }

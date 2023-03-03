@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <p>
-        Next.js app with a&nbsp;<a href='https://snipcart.com'>Snipcart</a>&nbsp;- powered store
+      &copy;{new Date().getFullYear()} | Created by Samee Vohra
       </p>
-      <div>
-        <a className={styles.footer__left} href='https://github.com/sameev/e-commerce-prototype'>Source Code</a>
+      <div className={styles.footer__left}>
+        <a href='https://github.com/sameev/e-commerce-prototype'>GitHub Source Code</a>
       </div>
     </footer>
   );
