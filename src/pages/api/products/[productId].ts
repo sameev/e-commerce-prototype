@@ -14,8 +14,10 @@ export interface ISnipcartProduct {
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const { productId } = req.query;
   const product: IProduct | undefined = products.find((p) => {
-    p.id === productId;
+    return p.id === productId;
   });
+
+  console.log(product);
 
   if (!product) {
     res.status(404).json({});
