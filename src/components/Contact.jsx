@@ -10,11 +10,11 @@ export default function Contact() {
         I look forward to hearing from you regarding any questions or feedback.
       </p>
       <div className={styles.contact__socials}>
-        <a href='https://www.linkedin.com/in/sameev/'>
-          <button>LinkedIn</button>
+        <a  href='https://www.linkedin.com/in/sameev/'>
+          <button className={styles.linkedin}>LinkedIn</button>
         </a>
         <a href='https://github.com/sameev'>
-          <button>GitHub</button>
+          <button className={styles.github}>GitHub</button>
         </a>
       </div>
     </div>

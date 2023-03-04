@@ -19,6 +19,20 @@
     font-weight: 600;
   }
 
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .linkedin {
+    background-color: #0077b5;
+  }
+
+  .github {
+    background-color: #0e1116;
+  }
+
   button {
     margin-top: 15px;
     font-size: 14px;
