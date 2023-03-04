@@ -1,6 +1,10 @@
 @use 'mixins';
 
 .footer {
+  position: fixed;
+  left:0;
+  bottom: 0;
+  width:100%;
   color: white;
   background: linear-gradient(90deg, #707070 0%, #474747 100%);
   display: flex;
