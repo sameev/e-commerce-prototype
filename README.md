@@ -17,6 +17,14 @@ npm run dev
 Once that is run, navigate to http://localhost:3000
 
 
+
+### Built With
+TypeScript
+React
+Next.js
+SCSS
+
+
 ## Style guide
 
 This web application is styled using SCSS. Files are located in the e-commerce-prototype/src/styles/ subdirectory.
